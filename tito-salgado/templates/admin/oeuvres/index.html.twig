@@ -1,0 +1,37 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+    <div class="col-12 text-center">
+    <br>
+        <h3>Gestion des oeuvres</h3>
+        <br>
+    </div>
+    <a href="{{ url('admin.oeuvres.form') }}" class="btn btn-info">Ajouter un oeuvre</a>
+    <div>
+    <br>
+        <table class="table table-striped">
+                <tr>
+                    <th>Image</th>
+                    <th>Nom</th>
+                    <th>Categories</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+                
+                {% for oeuvre in oeuvres %}
+                    <tr>
+                        <td>
+                            <img src="{{ asset('img/'~ oeuvre.image) }}" alt="" width="60">
+                        </td>
+                        <td>{{ oeuvre.name }}</td>
+                        <td>{{oeuvre.categories.name}}</td>
+                        <td>{{ oeuvre.description }}</td>
+                        <td>
+                            <a href="{{ url('admin.oeuvres.form.update', {'id': oeuvre.id}) }}" class="btn btn-warning">Modifier</a>
+                            <a href="{{ url('admin.oeuvres.remove', {'id': oeuvre.id}) }}" class="btn btn-danger mt-1">Supprimer</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </div>
+{% endblock %}

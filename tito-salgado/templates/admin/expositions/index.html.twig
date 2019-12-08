@@ -1,0 +1,29 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+    <div class="col-12 text-center">
+    <br>
+        <h3>Gestion des expositions</h3>
+        <br>
+    </div>
+    <a href="{{ url('admin.expositions.form') }}" class="btn btn-info">Ajouter une exposition</a>
+    <div>
+    <br>
+        <table class="table table-striped">
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    
+                </tr>
+                
+                {% for expo in expositions %}
+                    <tr>
+                        <td>{{ expo.name }}</td>
+                        <td>{{ expo.description }}</td>
+                        <td>{{ expo.date | date('d/m/Y') }} à {{ expo.date | date('H:i:s') }}</td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </div>
+{% endblock %}

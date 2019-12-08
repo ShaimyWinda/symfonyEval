@@ -1,0 +1,36 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+    <div class="col-12 text-center">
+    <br>
+        <h3>Les oeuvres</h3>
+    </div>
+    <br>
+    <div class="col-12">
+        <h5>Peintures</h5>
+        <hr>
+    </div>
+    {% for peinture in peintures %}
+        <div class="col-4 space-img">
+        <a href="{{ url('categories.details', { 'id': peinture.id }) }}"><img class="d-block img-fluid w-100" src="{{ asset('img/'~ peinture.image) }}" ></a>
+        </div>
+    {% endfor %}
+    <div class="col-12">
+        <h5>Sculptures</h5>
+        <hr>
+    </div>
+    {% for sculpture in sculptures %}
+        <div class="col-4 space-img">
+        <a href="{{ url('categories.details', { 'id': sculpture.id }) }}"><img class="d-block img-fluid w-100" src="{{ asset('img/'~ sculpture.image) }}" ></a>
+        </div>
+    {% endfor %}
+    <div class="col-12">
+        <h5>Dessins</h5>
+        <hr>
+    </div>
+    {% for dessin in dessins %}
+        <div class="col-4 space-img">
+        <a href="{{ url('categories.details', { 'id': dessin.id }) }}"><img class="d-block img-fluid w-100" src="{{ asset('img/'~ dessin.image) }}" ></a>
+        </div>
+    {% endfor %}
+{% endblock %}

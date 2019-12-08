@@ -1,0 +1,16 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+    <div class="col-12 text-center">
+    {% for category in categories %}
+    {% if loop.first %}
+    <br>
+        <h3>{{ category.categories.name }}</h3>
+        <br>
+    </div>
+    {% endif %}
+        <div class="col-4 space-img">
+        <a href="{{ url('categories.details', { 'id': category.id }) }}"><img class="d-block img-fluid w-100" src="{{ asset('img/'~ category.image) }}" ></a>
+        </div>
+    {% endfor %}
+{% endblock %}

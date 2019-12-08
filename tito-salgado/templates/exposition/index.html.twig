@@ -1,0 +1,19 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+    <div class="col-12 text-center">
+    <br>
+        <h3>Exposition</h3>
+    <br>
+    </div>
+   {% for exposition in expositions %}
+    <div class="col-12">
+        <h4>{{ exposition.name }}<h4>
+        <p class="myP">{{ exposition.description }}</p>
+        <p class="myP"><i>{{ exposition.date | date('d/m/Y') }} à {{ exposition.date | date('H:i:s') }}</i></p>
+    <hr>
+    </div>
+    
+    {% endfor %}
+
+{% endblock %}

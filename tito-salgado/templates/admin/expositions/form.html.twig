@@ -1,0 +1,21 @@
+{% extends 'parent.html.twig' %}
+
+{% block content %}
+   <div class="col-12 text-center">
+    <br>
+        <h3>Gestion des expositions</h3>
+        <br>
+    </div>
+   
+        {{ form_start(form, { attr : { novalidate: 'novalidate'}}) }}
+        <p>{{ form_label(form.name, 'Nom') }}
+        {{ form_widget(form.name, { attr : { placeholder: 'Saisissez un nom'}}) }}</p>
+        <p>
+            {{ form_label(form.date, 'Date:') }}
+            {{ form_widget(form.date) }}
+        </p>
+        <p>{{ form_label(form.description, 'Description') }}
+        {{ form_widget(form.description, { attr : { placeholder: 'Saisissez une description'}}) }}</p>
+        <input type="submit" value="Valider" class="btn btn-primary">
+        {{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+}
+
+.duck-blue,
+.dropdown-menu {
+    background-color: #0a6377;
+}
+
+.dropdown-item:hover {
+    background-color: #81e8ff78;
+}
+
+h3 {
+    color: #0a6377;
+}
+
+.navbar-light .navbar-brand,
+.navbar-brand:hover,
+.navbar-nav a {
+    color: white !important;
+}
+
+.carousel-center {
+    margin: 0 auto;
+}
+
+#text-carousel {
+    position: absolute;
+    margin-top: -9em;
+    color: #ffffff;
+    margin-left: 3em;
+}
+
+.space-img {
+    padding-bottom: 1em;
+}
+
+hr {
+    border-top: 2px solid #0a6377 !important;
+}
+
+p.myP {
+    font-size: 16px !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vYXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHVCQUF1QjtBQUMzQjs7QUFFQTs7SUFFSSx5QkFBeUI7QUFDN0I7O0FBRUE7SUFDSSwyQkFBMkI7QUFDL0I7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBOzs7SUFHSSx1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksd0NBQXdDO0FBQzVDOztBQUVBO0lBQ0ksMEJBQTBCO0FBQzlCLEMiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4uZHVjay1ibHVlLFxuLmRyb3Bkb3duLW1lbnUge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwYTYzNzc7XG59XG5cbi5kcm9wZG93bi1pdGVtOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjODFlOGZmNzg7XG59XG5cbmgzIHtcbiAgICBjb2xvcjogIzBhNjM3Nztcbn1cblxuLm5hdmJhci1saWdodCAubmF2YmFyLWJyYW5kLFxuLm5hdmJhci1icmFuZDpob3Zlcixcbi5uYXZiYXItbmF2IGEge1xuICAgIGNvbG9yOiB3aGl0ZSAhaW1wb3J0YW50O1xufVxuXG4uY2Fyb3VzZWwtY2VudGVyIHtcbiAgICBtYXJnaW46IDAgYXV0bztcbn1cblxuI3RleHQtY2Fyb3VzZWwge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW4tdG9wOiAtOWVtO1xuICAgIGNvbG9yOiAjZmZmZmZmO1xuICAgIG1hcmdpbi1sZWZ0OiAzZW07XG59XG5cbi5zcGFjZS1pbWcge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbmhyIHtcbiAgICBib3JkZXItdG9wOiAycHggc29saWQgIzBhNjM3NyAhaW1wb3J0YW50O1xufVxuXG5wLm15UCB7XG4gICAgZm9udC1zaXplOiAxNnB4ICFpbXBvcnRhbnQ7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+
+.duck-blue,
+.dropdown-menu {
+    background-color: #0a6377;
+}
+
+.dropdown-item:hover {
+    background-color: #81e8ff78;
+}
+
+h3 {
+    color: #0a6377;
+}
+
+.navbar-light .navbar-brand,
+.navbar-brand:hover,
+.navbar-nav a {
+    color: white !important;
+}
+
+.carousel-center {
+    margin: 0 auto;
+}
+
+#text-carousel {
+    position: absolute;
+    margin-top: -9em;
+    color: #ffffff;
+    margin-left: 3em;
+}
+
+.space-img {
+    padding-bottom: 1em;
+}
+
+hr {
+    border-top: 2px solid #0a6377 !important;
+}
+
+p.myP {
+    font-size: 16px !important;
+}
